@@ -6,6 +6,20 @@ buildscript {
         targetSdkVersion = 34
         ndkVersion = "26.1.10909125"
         kotlinVersion = "1.9.24"
+        // Enable IMA (Interactive Media Ads) integration with ExoPlayer
+        useExoplayerIMA = false
+
+        // Enable support for RTSP (Real-Time Streaming Protocol) with ExoPlayer
+        useExoplayerRtsp = true
+
+        // Enable support for Smooth Streaming with ExoPlayer
+        useExoplayerSmoothStreaming = true
+
+        // Enable support for DASH (Dynamic Adaptive Streaming over HTTP) with ExoPlayer
+        useExoplayerDash = true
+
+        // Enable support for HLS (HTTP Live Streaming) with ExoPlayer
+        useExoplayerHls = true
     }
     repositories {
         google()

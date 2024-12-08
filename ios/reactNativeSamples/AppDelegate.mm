@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <AVFoundation/AVFoundation.h> 
 
 @implementation AppDelegate
 
@@ -8,6 +9,7 @@
 {
   self.moduleName = @"reactNativeSamples";
   // You can add your custom initial props in the dictionary below.
+  [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
