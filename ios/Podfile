@@ -16,7 +16,8 @@ end
 
 target 'reactNativeSamples' do
   config = use_native_modules!
-
+  pod 'react-native-vlc-rtsp', :path => '../node_modules/react-native-vlc-rtsp' 
+  pod 'MobileVLCKit'
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
