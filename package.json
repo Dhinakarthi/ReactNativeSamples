@@ -10,8 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "deprecated-react-native-prop-types": "^5.0.0",
     "react": "18.3.1",
     "react-native": "0.76.3",
+    "react-native-slider": "^0.11.0",
+    "react-native-vector-icons": "^10.2.0",
     "react-native-vlc-rtsp": "^1.0.6"
   },
   "devDependencies": {
